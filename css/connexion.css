@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+form{
+    Display: grid;
+    gap: 0;
+    Grid-template-columns: 3fr 1fr;
+    height: 100vh;
+}
+#cx_left{
+    background-image: url('../img/connex.png');
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+#cx_right{
+    padding: 20px;
+    display: block;
+}
+#wrap{
+    margin-top: 30%;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_top{
+    font-family: 'Koulen', cursive;
+    display: block;
+    font-size: 50px;
+    line-height: 1.2;
+    color: rgb(51,51,51);
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.login_field {
+    padding: 20px 0px;
+    position: relative;
+}
+
+.login_input {
+    border: none;
+    border-bottom: 2px solid #D1D1D4;
+    background: none;
+    padding: 7px;
+    padding-left: 3em;
+    font-weight: 700;
+    width: 80%;
+    transition: .2s;
+
+}
+
+.login_input:active, .login_input:focus, .login_input:hover {
+    outline: none;
+    border-bottom-color: black;
+}
+
+.text-right{
+    text-align: right;
+    padding-bottom: 30px;
+    font-weight: 300;
+    font-size: smaller;
+
+}
+
+.login_submit {
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(212, 211, 232);
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    background-color: #A9A9A9;
+
+}
+
+.login_submit:active, .login_submit:focus, .login_submit:hover {
+    background-position: 0px 0px, 258px 0px;
+    border-color: black;
+    outline: none;
+}
+
+.button_icon {
+    font-size: 24px;
+    margin-left: auto;
+    color: black;
+}
+
+.login_submit {
+    background-position: -258px 0px, 0px 0px;
+}
+
+
+a:hover{color: #A9A9A9}
+a:active { text-decoration: none; }
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a { color: inherit; }

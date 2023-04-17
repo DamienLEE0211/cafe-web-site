@@ -1,0 +1,115 @@
+{
+  "capsule": [
+    {
+      "image": "../img/espresso.png",
+      "nom": "L'or 20 capsules",
+      "description": "Espresso Delizioso",
+      "prix": "5.61€",
+      "stock": 100
+    },
+    {
+      "image": "../img/forza.png",
+      "nom": "L'or 20 capsules",
+      "description": "Espresso Forza",
+      "prix": "6.29€",
+      "stock": 100
+    },
+    {
+      "image": "../img/royal.png",
+      "nom": "Café Royal 18 capsules",
+      "description": "Espresso",
+      "prix": "5.39€",
+      "stock": 100
+    },
+    {
+      "image": "../img/livanto.png",
+      "nom": "Nespresso 50 capsules",
+      "description": "Livanto intensité",
+      "prix": "24.60€",
+      "stock": 100
+    },
+    {
+      "image": "../img/starbucks.png",
+      "nom": "Starbucks 10 capsules",
+      "description": "Espresso",
+      "prix": "4.04€",
+      "stock": 100
+    }
+  ],
+
+  "grain": [
+    {
+      "image": "../img/bresil.png",
+      "nom": "Brésil ahumas",
+      "description": "1kg",
+      "prix": "6.90€",
+      "stock": 50
+    },
+    {
+      "image": "../img/mexique.png",
+      "nom": "Mexique grains",
+      "description": "1kg",
+      "prix": "17.95€",
+      "stock": 50
+    },
+    {
+      "image": "../img/kawa.png",
+      "nom": "Kawa coffee",
+      "description": "1kg",
+      "prix": "35.65€",
+      "stock": 50
+    },
+    {
+      "image": "../img/fazen.png",
+      "nom": "Brésil Fazenda Arema",
+      "description": "1kg",
+      "prix": "32.00€",
+      "stock": 50
+    },
+    {
+      "image": "../img/bio.png",
+      "nom": "Colombie Grain Bio",
+      "description": "1kg",
+      "prix": "24.47€",
+      "stock": 50
+    }
+  ],
+
+  "machine": [
+    {
+      "image": "../img/gustoMini.png",
+      "nom": "Dolce Gusto Mini",
+      "description": "Blanc",
+      "prix": "37.99€",
+      "stock": 30
+    },
+    {
+      "image": "../img/krups.png",
+      "nom": "Krups XN304T",
+      "description": "Noir",
+      "prix": "154.00€",
+      "stock": 30
+    },
+    {
+      "image": "../img/bosch.png",
+      "nom": "Bosch Tassimo",
+      "description": "Noir",
+      "prix": "65.39€",
+      "stock": 30
+    },
+    {
+      "image": "../img/vertuo.png",
+      "nom": "Nespresso Vertuo",
+      "description": "Noir",
+      "prix": "79.00€",
+      "stock": 30
+    },
+    {
+      "image": "../img/inissia.png",
+      "nom": "Nespresso Inissia",
+      "description": "Blanc",
+      "prix": "112.99€",
+      "stock": 30
+    }
+  ]
+}

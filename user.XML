@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+    <user id="1">
+        <email>dongwon@cy-tech.fr</email>
+        <password>123</password>
+    </user>
+    <user id="2">
+        <email>brice@cy-tech.fr</email>
+        <password>456</password>
+    </user>
+    <user id="3">
+        <email>ehsan@cy-tech.fr</email>
+        <password>cytech</password>
+    </user>
+    <user id="4">
+        <email>elizabeth@cy-tech.fr</email>
+        <password>cytech</password>
+    </user>
+</users>
