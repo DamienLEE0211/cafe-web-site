@@ -1,6 +1,11 @@
 <?php
 include "bddData.php";
 
+$server = "localhost";
+$bdname = "lovebarista";
+$username = "lovebarista1";
+$password = "bdd123";
+
 session_start();
 $mysqli = new mysqli("localhost", "lovebarista1", "bdd123", "lovebarista");
 if ($mysqli->connect_error) {
@@ -48,4 +53,39 @@ if($res==true){
 }else{
     echo "Erreur execution requete".$mysqli->error;
 }
+
+
+$connection = null;
+
+function connexion($server, $username, $password, $dbname){
+    global $connection;
+    try {
+        $connection = new PDO("mysql:host=$server;dbname=$dbname", $username, $password);
+        $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        return true;
+    } catch(PDOException $e) {
+        echo "Connection failed: " . $e->getMessage();
+        return false;
+    }
+}
+
+// Disconnect from the database
+function deconnexion() {
+    global $connection;
+    $connection = null;
+}
+
+
+function retrieveCategories() {
+    global $connection;
+    try {
+        $stmt = $connection->query("SELECT * FROM categories");
+        $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return $categories;
+    } catch(PDOException $e) {
+        echo "Query failed: " . $e->getMessage();
+        return null;
+    }
+}
+
 ?>
