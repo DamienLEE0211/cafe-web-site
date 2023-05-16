@@ -8,9 +8,9 @@ echo('
         </div>
         <div id="nav-bottom">
             <p>Nos produits</p>
-            <a href="produit.php?categorie=grain">Grain</a>
-            <a href="produit.php?categorie=machine">Machine</a>
-            <a href="produit.php?categorie=capsule">Capsule</a>
+            <a href="produit.php?categorie=0">Grain</a>
+            <a href="produit.php?categorie=1">Machine</a>
+            <a href="produit.php?categorie=2">Capsule</a>
             <a href="contact.php">Contact</a>
         </div>
     </div>

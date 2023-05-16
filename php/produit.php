@@ -1,6 +1,7 @@
 <?php
-session_start();
+include "bdd.php";
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="../css/tp.css">
@@ -19,7 +20,6 @@ include "top.php";
 <div id="mid">
     <?php
     include "nav.php"
-
     ?>
     <div id="section">
         <div class="tb_section">
@@ -37,18 +37,13 @@ include "top.php";
                     $_SESSION['panier'] = array();
                 }
 
-                $json_string = file_get_contents('../produit.json');
-                $data = json_decode($json_string, true);
-
-                $produits = $data[$_GET["categorie"]];
-
-                foreach ($produits as $produit) {
-
-                    echo '
+                foreach ($donnees as $produit) {
+                    if($produit["categories_id"] == $_GET["categorie"]){
+                        echo '
                         <form method="post" action="add_product.php">
                             <tr>
-                                <td><img src="'.$produit["image"]. '" height="90px" onclick="zoomImg(this)" class="image-Boutique" alt="' . $produit["nom"] . '"></td>
-                                <td>' . $produit["nom"]. '</td>
+                                <td><img src="' . $produit["image"] . '" height="90px" onclick="zoomImg(this)" class="image-Boutique" alt="' . $produit["nom"] . '"></td>
+                                <td>' . $produit["nom"] . '</td>
                                 <td>' . $produit["description"] . '</td>
                                 <td>' . $produit["prix"] . '</td>
                                 <td class="stock">' . $produit["stock"] . '</td>
@@ -63,10 +58,10 @@ include "top.php";
                                 </td>
                             </tr>
                         </form>';
+                    }
+
                 }
-
                 ?>
-
             </table>
         </div>
         <button class="MCB" onclick="cacherStock()">Montrer/Cacher stock</button>
@@ -74,7 +69,7 @@ include "top.php";
 </div>
 
 <?php
-include"footer.php"
+include "footer.php"
 ?>
 
 </body>
