@@ -2,6 +2,9 @@ Site web Love Barista de Lee Dongwon et Brice Morand ING1 GI2.
 
 La page d'accueil est index.php.
 
+Pour démarer le site il fait executer la commande est
+ php -S localhost:8000
+
 La page de connexion est connexion.php.
 logins/Mots de passes suivants :
      -dongwon@cy-tech.fr / 123
@@ -20,3 +23,5 @@ Si on est connecté, le bouton de connexion change et permet de se déconnecter.
 
 Pour faire une demande de contact in faut bien remplir tous les champs et mettre le même email qui a été utilisé pour se connecter avant de l'envoyer.
 Si il y a des erreurs, les champs concerné seront marquées en rouge, il faudra donc resaisir le contenu du champ.
+
+https://github.com/DamienLEE0211/cafe-web-site.git

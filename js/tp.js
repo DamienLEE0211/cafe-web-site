@@ -90,8 +90,4 @@ function updateStock(b) {
         xhttp.open('POST', 'add_product.php', true);
         xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
         xhttp.send('product_name=' + encodeURIComponent(productName) + '&product_id=' + encodeURIComponent(productId) + '&quantity=' + encodeURIComponent(newStock));
-
-
-
-
 }
