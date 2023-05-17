@@ -56,7 +56,7 @@ include "top.php";
                                     <input type="hidden" name="product_name" value="' . $produit["nom"] . '">
                                     <input type="hidden" name="product_price" value="' . $produit["prix"] . '">
                                    
-                                    <button type="button" class="ajouter" name="add_to_cart" onclick="updateStock(this)">Ajouter</button>
+                                    <button type="button" class="ajouter" name="add_to_cart" onclick="updateStock(this)">Ajouter/Commander</button>
                                    
                                 </td>
                             </tr>
