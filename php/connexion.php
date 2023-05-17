@@ -13,7 +13,6 @@ if (!isset($_SESSION['panier'])) {
 <html lang="en">
 <link rel="stylesheet" href="../css/connexion.css">
 <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
-<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <head>
     <meta charset="UTF-8">
     <title>Love Barista</title>

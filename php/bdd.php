@@ -2,9 +2,9 @@
 include "bddData.php";
 
 $server = "localhost";
-$bdname = "lovebarista";
 $username = "lovebarista1";
 $password = "bdd123";
+$bdname = "lovebarista";
 
 session_start();
 $mysqli = new mysqli("localhost", "lovebarista1", "bdd123", "lovebarista");
@@ -54,9 +54,6 @@ if($res==true){
     echo "Erreur execution requete".$mysqli->error;
 }
 
-
-$connection = null;
-
 function connexion($server, $username, $password, $dbname){
     global $connection;
     try {
@@ -64,7 +61,7 @@ function connexion($server, $username, $password, $dbname){
         $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return true;
     } catch(PDOException $e) {
-        echo "Connection failed: " . $e->getMessage();
+        echo "La connexion a échoué: " . $e->getMessage();
         return false;
     }
 }
@@ -83,7 +80,7 @@ function retrieveCategories() {
         $categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
         return $categories;
     } catch(PDOException $e) {
-        echo "Query failed: " . $e->getMessage();
+        echo "Erreur d'exécution de la requête : " . $e->getMessage();
         return null;
     }
 }

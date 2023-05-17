@@ -61,3 +61,37 @@ function validateForm() {
         return false;
     }
 }
+function updateStock(b) {
+    let productName = b.previousSibling.previousSibling.previousSibling.previousSibling.value;
+    let productId = b.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.value;
+    let newStock = b.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.previousSibling.value;
+    console.log(productName);
+    console.log(productId);
+    console.log(newStock);
+
+    newStock = parseInt(newStock);
+
+    let stock_reste = b.parentNode.previousSibling.previousSibling;
+        var xhttp = new XMLHttpRequest();
+
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                console.log(this.responseText);
+                var response = JSON.parse(this.responseText);
+                if (response.status === 'success') {
+
+                    stock_reste.innerHTML = response.stock;
+                    console.log('Stock est mis à jour');
+                } else {
+                    console.log('Fail to update: ' + response.message);
+                }
+            }
+        };
+        xhttp.open('POST', 'add_product.php', true);
+        xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        xhttp.send('product_name=' + encodeURIComponent(productName) + '&product_id=' + encodeURIComponent(productId) + '&quantity=' + encodeURIComponent(newStock));
+
+
+
+
+}
