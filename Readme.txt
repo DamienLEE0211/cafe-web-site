@@ -1,4 +1,4 @@
-Site web Love Barista de Lee Dongwon et Brice Morand ING1 GI2.
+Site web Love Barista de Lee Dongwon
 
 La page d'accueil est index.php.
 
